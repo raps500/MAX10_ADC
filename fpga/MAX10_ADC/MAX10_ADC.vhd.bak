@@ -1,0 +1,40 @@
+--
+--
+-- ADC example
+--
+-- For the MAX10
+--
+-- The internal ADC of the MAX10 is used to capture 1024 samples
+-- on request, the values are then streamed to the UART at 1 MBit/s
+--
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity MAX10_ADC is
+    port (
+        clk_in      : in std_logic;
+        reset_in    : in std_logic;
+
+        -- display interface
+        HEX0 : out std_logic_vector(7 downto 0);
+        HEX1 : out std_logic_vector(7 downto 0);
+        HEX2 : out std_logic_vector(7 downto 0);
+        HEX3 : out std_logic_vector(7 downto 0);
+        HEX4 : out std_logic_vector(7 downto 0);
+        HEX5 : out std_logic_vector(7 downto 0);
+        
+    );
+end MAX10_ADC;
+
+architecture logic of MAX10_ADC
+
+
+
+begin
+
+
+
+end architecture;
